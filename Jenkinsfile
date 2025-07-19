@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    tools {
+    maven 'maven'
+    }
 
     environment {
         DOCKER_IMAGE = 'leoughhh/jenkins_app'
